@@ -7,13 +7,13 @@ MODEL_NAME = "openai/gpt-oss-120b"
 
 
 # --- App Interface ---
-st.set_page_config(page_title="WanderBot", page_icon="✈️")
-st.title("✈️ WanderBot")
+st.set_page_config(page_title="TripBuddy", page_icon="✈️")
+st.title("✈️ TripBuddy")
 st.caption(f"Powered by Groq Cloud ({MODEL_NAME}) - Super Fast ⚡")
 
 # --- Persona ---
 SYSTEM_INSTRUCTION = """
-You are WanderBot, a helpful and efficient virtual travel agent.
+You are TripBuddy, a helpful and efficient virtual travel agent.
 1. Help users find hotels, activities, and travel tips.
 2. Be concise and use bullet points for recommendations.
 3. If asked about non-travel topics, politely redirect to travel planning.
@@ -61,4 +61,5 @@ if prompt := st.chat_input("Ask about destinations..."):
 
     except Exception as e:
         st.error("🚨 Connection Error!")
+
         st.code(str(e))
