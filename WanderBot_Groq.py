@@ -12,7 +12,7 @@ MODEL_NAME = "llama-3.3-70b-versatile"
 st.set_page_config(page_title="Humanizer AI", page_icon="✍️")
 
 st.title("✍️ Humanizer AI")
-st.caption("Rewrite AI text into natural human-like writing")
+st.caption("By Azharil")
 
 # =========================
 # SYSTEM PROMPT
