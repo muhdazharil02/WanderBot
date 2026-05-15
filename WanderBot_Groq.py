@@ -4,7 +4,7 @@ from openai import OpenAI
 BASE_URL = "https://api.groq.com/openai/v1"
 API_KEY = st.secrets["GROQ_API_KEY"]
 # Better model for writing/humanizing
-MODEL_NAME = "llama-3.3-70b-versatile"
+MODEL_NAME = "openai/gpt-oss-120b"
 
 # =========================
 # PAGE
